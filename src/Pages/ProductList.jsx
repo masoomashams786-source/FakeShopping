@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png"
 
 function ProductList() {
   const [products, setProducts] = useState([]);
@@ -45,8 +46,8 @@ function ProductList() {
       <h2 className="fw-bold text-center mt-5 mb-4">
         
         <img
-          src="../public/logo.png"
-          alt="ShopSmart Logo"
+          src={logo}
+          alt=" Logo"
           width="90"
           height="90"
           className="me-2"

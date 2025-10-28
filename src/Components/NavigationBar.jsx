@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/logo.png"
+
 
 function NavigationBar() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,7 +28,7 @@ function NavigationBar() {
       <Container>
         <Navbar.Brand as={Link} to="/" className="fw-bold text-primary">
           <img
-            src="../public/logo.png"
+            src={logo}
             alt="ShopSmart Logo"
             width="90"
             height="90"
