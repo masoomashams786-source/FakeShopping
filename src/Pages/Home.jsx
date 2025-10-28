@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function Home() {
   const navigate = useNavigate();
+  console.log("change")
 
   const handleViewProducts = () => {
     navigate("/products");
